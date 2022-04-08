@@ -1,38 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --black: #000;
+    --white: #fff;
+    --secondary-white: #eee;
+    --blue-sky-color: #BCC3CB;
+    --background-color: #009d81;
+    --blue-sky-color2: #e8eeea;
+    --black-blue-sky-color: #5f5f55;
+    --primary-green: #08e200;
+    --secondary-green: #07cf00;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Source Serif 4', sans-serif;
+    --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+body {
+    width: 100%;
+    min-height: 100hv;
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #444;
+    overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    background-color: #000;
+    color: #fff;
+    z-index: 11111;
 }
