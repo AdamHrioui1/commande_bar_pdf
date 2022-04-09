@@ -102,8 +102,8 @@ const Facture = () => {
                       <th>Designation</th>
                       <th>Unity</th>
                       <th>Quantity</th>
-                      <th>PU HT (USD)</th>    
-                      <th>PT HT (USD)</th>
+                      <th>PU HT (dh)</th>    
+                      <th>PT HT (dh)</th>
                   </tr>
                   {
                       table.map(t => {
@@ -138,7 +138,6 @@ const Facture = () => {
           </div>
           <div className='additionel__info'>
               <p>{last_info.firstText}</p>
-              {/* <p></p> */}
           </div>
         </div>
 

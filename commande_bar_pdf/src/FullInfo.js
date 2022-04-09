@@ -100,7 +100,7 @@ function FullInfo() {
                 
                 <div className='input__container'>
                     <input type='number' name='PUHT' id='PUHT' className='input' placeholder=' ' onChange={e => setPUHT(parseInt(e.target.value))} value={PUHT} />
-                    <label htmlFor='PUHT'>PU HT (USD)</label>  
+                    <label htmlFor='PUHT'>PU HT (dh)</label>  
                 </div>
 
                 <button className='button' onClick={handleAdd}>Ajouter</button>
@@ -112,8 +112,8 @@ function FullInfo() {
                         <th>Designation</th>
                         <th>Unity</th>
                         <th>Quantity</th>
-                        <th>PU HT (USD)</th>    
-                        <th>PT HT (USD)</th>    
+                        <th>PU HT (dh)</th>    
+                        <th>PT HT (dh)</th>    
                         <th>Edite</th>    
                         <th>Delete</th>    
                     </tr>

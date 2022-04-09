@@ -93,8 +93,8 @@ const Commande = () => {
                       <th>Designation</th>
                       <th>Unity</th>
                       <th>Quantity</th>
-                      <th>PU HT (USD)</th>    
-                      <th>PT HT (USD)</th>
+                      <th>PU HT (dh)</th>    
+                      <th>PT HT (dh)</th>
                   </tr>
                   {
                       table.map(t => {
