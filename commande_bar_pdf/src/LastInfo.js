@@ -83,8 +83,6 @@ function LastInfo() {
 
         formate__date(date)
 
-        console.log(formatDate)
-
         const last__info = {
             commandeNum: commandeNum,
             devis: devis, 
@@ -92,7 +90,7 @@ function LastInfo() {
             date: date,
             formatDate: formate__date(date),
             refs: refs,
-            ice: ice,
+            ice: randomICE(),
             nbc: nbc,
             firstText: firstText,
             secondText: secondText,
@@ -104,6 +102,17 @@ function LastInfo() {
 
     const clearStroge = () => {
         localStorage.clear()
+    }
+
+    const randomICE = () => {
+        var randIce = []
+        var randomIceString = ''
+        for (let i = 0; i < 15; i++) {
+            var r = Math.floor(Math.random() * 10)
+            randIce.push(r)
+            randomIceString += String(r)
+        }
+        return randomIceString
     }
 
     var b = JSON.parse(localStorage.getItem('last info'))
@@ -154,11 +163,6 @@ function LastInfo() {
             <div className='input__container'>
                 <input type='date' name='date' id='date' className='input' placeholder=' ' onChange={(e) => setDate(e.target.value)} value={date} />
                 <label htmlFor='date'>Date</label>  
-            </div>
-
-            <div className='input__container'>
-                <input type='number' name='ice' id='ice' className='input' placeholder=' ' onChange={(e) => setIce(parseInt(e.target.value))} value={ice} />
-                <label htmlFor='ice'>ICE</label>  
             </div>
 
             <div className='input__container'>
