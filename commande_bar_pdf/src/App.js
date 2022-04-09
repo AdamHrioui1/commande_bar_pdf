@@ -12,7 +12,7 @@ function App() {
       <Nav />
       <Router>
         <Routes>
-          <Route path='/' element={<ClientInfo />} />
+          <Route exact path='/' element={<ClientInfo />} />
           <Route path='/fullinfo' element={<FullInfo />} />
           <Route path='/fullinfo/:id' element={<FullInfo />} />
           <Route path='/lastinfo' element={<LastInfo />} />
