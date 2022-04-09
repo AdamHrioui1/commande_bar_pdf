@@ -1,0 +1,164 @@
+.pdf__papper {
+    font-size: 14px;
+    padding: 40px;
+    width: 826px;
+    height: 1000px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    /* border: 1px solid #000; */
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+header {
+
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 11px;
+}
+
+header h2 {
+    font-family: serif;
+}
+
+.general__infos__container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    width: 350px;
+}
+
+/****************************/
+
+/*-----------------left info ------------*/
+
+.left__info {
+    height: 250px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    /* border: 1px solid #000; */
+}
+
+.img__container h2 {
+    text-align: center;
+}
+
+/*-----------------right info -----------*/
+.right__info {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.right__info p:nth-child(1) {
+    padding: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.right__info h2 {
+    padding: 20px 0;
+    padding-top: 0;
+}
+
+.right__info h2:nth-child(5) {
+    padding-top: 20px;
+}
+
+
+/*------------------table container --------------*/
+.table__container {
+    margin-top: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+table {
+    width: 80%;
+    margin: 20px;
+}
+
+.table__container table td, .table__container table th {
+    font-size: 14px;
+    padding: 5px;
+}
+
+/*----------------additionnel info --------------*/
+.additionel__info {
+    width: 80%;
+}
+
+.additionel__info p {
+    margin-bottom: 20px;
+}
+
+/*-----------------footer ------------------*/
+footer {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.download__btn__container {
+    width: 100%;
+    margin: 10px 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download__btn {
+    padding: 10px 20px;
+
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    
+    background-color: var(--primary-green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.border {
+    width: 100%;
+    height: 2px;
+
+    border: 2px solid #000;
+}
+
+.download__btn.danger {
+    background-color: #fd4a4a;
+}
+.download__btn.danger:hover {
+    background-color: #fd2222;
+}

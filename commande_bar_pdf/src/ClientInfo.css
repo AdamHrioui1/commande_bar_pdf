@@ -49,7 +49,7 @@
     transform: translateY(-50%);
 
     color: #888;
-    background-color: var(--secondary-white) ;
+    background-color: var(--white) ;
     font-size: 14px;
     transition: .2s;
 

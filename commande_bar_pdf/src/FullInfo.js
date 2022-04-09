@@ -77,7 +77,7 @@ function FullInfo() {
     <>
         <div className='full__info__container'>
             <form className='form'>
-                <h1>Full Information</h1>
+                <h1>Tous les Achats</h1>
                     
                 <Link to='/' className='before__btn' >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"/></svg>
@@ -85,17 +85,17 @@ function FullInfo() {
             
                 <div className='input__container'>
                     <textarea type='textarea' name='designation' id='designation' className='input' placeholder=' ' cols="30" rows="5"  onChange={e => setDesignation(e.target.value)} value={designation}></textarea>
-                    <label htmlFor='contactText'>Designation</label>  
+                    <label htmlFor='contactText'>Désignation</label>  
                 </div>
                 
                 <div className='input__container'>
                     <input type='text' name='unity' id='unity' className='input' placeholder=' ' onChange={e => setUnity(e.target.value)} value={unity} />
-                    <label htmlFor='unity'>Unity</label>  
+                    <label htmlFor='unity'>Unité</label>  
                 </div>
                 
                 <div className='input__container'>
                     <input type='number' name='qunatity' id='qunatity' className='input' placeholder=' ' onChange={e => setQuantity(parseInt(e.target.value))} value={quantity} />
-                    <label htmlFor='qunatity'>Qunatity</label>  
+                    <label htmlFor='qunatity'>Quantité</label>  
                 </div>
                 
                 <div className='input__container'>
@@ -103,7 +103,7 @@ function FullInfo() {
                     <label htmlFor='PUHT'>PU HT (USD)</label>  
                 </div>
 
-                <button className='button' onClick={handleAdd}>Add</button>
+                <button className='button' onClick={handleAdd}>Ajouter</button>
             </form>
 
             <table>
@@ -140,32 +140,25 @@ function FullInfo() {
                     }
 
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><strong>Total HT</strong></td>
+                        <td colSpan="2" rowSpan='3' ></td>
+                        <td colSpan="2"><strong>Total HT</strong></td>
                         <td>{total}</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><strong>TVA 20%</strong></td>
+                        <td colSpan="2"><strong>TVA 20%</strong></td>
                         <td>{total / 5} </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><strong>Total TTC</strong></td>
+                        <td colSpan="2"><strong>Total TTC</strong></td>
                         <td><strong>{total + total / 5}</strong></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
         <div className='full__info__container bottom'>  
             <div className='form__bottom admin width__auto'>
-                <Link to='/lastinfo'>Next</Link>
+                <Link to='/lastinfo'>Suivant</Link>
             </div>
         </div>
     </>
